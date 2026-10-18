@@ -9,8 +9,11 @@
 ## Overview
 
 The Leak Cube is a compact, wireless instrumentation module in the Blinky-Lite Instrumentation Platform. It is designed to detect water leaks using long, low-cost resistive wire detectors, then communicate leak states and alarms to a central Blinky-Lite control system.
+
 Each detector strip consists of two parallel thin stainless-steel wires embedded in a plastic mesh. When water bridges the wires, the resistance between them drops and the Leak Cube detects a leak. The strips can be many metres long, providing broad coverage along floors, cable routes, tunnels, basements, and other remote locations.
+
 The high-impedance measurement network is sensitive to impedances on the order of 10 MΩ. This enables detection of small conductivity changes while also helping identify an open circuit caused by a damaged or cut detector strip.
+
 Built around the Raspberry Pi Pico W / RP2040, the module uses 2.4 GHz Wi-Fi and MQTT publish/subscribe communication. This event-driven approach supports distributed deployments without wired data connections and enables Blinky-Lite to use device information for recording, notifications, visualisation, and machine-protection workflows.
 
 ### Key features
@@ -87,6 +90,7 @@ The firmware is released under the MIT License, giving users broad permission to
 ### Integration model
 
 The Leak Cube uses MQTT to publish detector states, leak events, and detector-fault events. This event-driven model avoids conventional polling and enables prompt control-system responses to changing conditions.
+
 In a typical deployment, the device connects by Wi-Fi to the network and communicates through an MQTT broker. Blinky-Lite represents it as an integrated instrumentation node and can use its information for recording, display, notification, alarms, and machine-protection logic.
 
 ### Measurement, safety, and installation considerations
