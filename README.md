@@ -2,7 +2,7 @@
 
 **Two-channel, wireless water-leak detection for wide-area coverage in remote equipment spaces, tunnels, basements, and other hard-to-reach locations.**
 
-| Electronics | Detector Installation|
+| Electronic Module | Detector Installation|
 |-------------|----------------------|
 | <img src="leak-cube.png" alt="leak-cube" width="400"/> | <img src="tunnel-install.jpg" alt="tunnel-install" width="400"/> |
 
